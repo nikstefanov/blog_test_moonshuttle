@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div clas='form-group' style="width: 66rem;">
+      <form (ngSubmit)="title = titleEl.value; content = contentEl.value; onSubmit()" #postForm="ngForm">
+        <label>Title:</label>
+        <input type="text" class="form-control" id="title" #titleEl>
+        <label>Content:</label>
+        <textarea class="form-control" id="content" #contentEl></textarea>
+        <br>
+        <button type="submit" class="btn btn-success" [disabled]="false">Post</button>
+      </form>
+    </div>
+  </div>
+</div>

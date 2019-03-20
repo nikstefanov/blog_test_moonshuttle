@@ -1,0 +1,5 @@
+<ul *ngFor="let post of posts" class="">
+  <li class="card" style="width: 66rem;">
+    <app-post-list-item (deletePost)="deletePost($event)" [post]="post"></app-post-list-item>
+  </li>
+</ul>
